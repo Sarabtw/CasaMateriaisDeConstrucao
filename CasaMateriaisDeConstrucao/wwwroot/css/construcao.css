@@ -1,0 +1,48 @@
+.btn-outline-light
+{
+width: 90pt;
+height: 40pt;
+}
+.footer-custom {
+    background-color: #c63c47;
+    color: white;
+    padding: 40px 0;
+    position: relative;
+  }
+  .form-control {
+    border-radius: 8px;
+  }
+  .btn-cadastrar {
+    border: 2px solid #ffc107;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  .btn-cadastrar:hover {
+    background-color: #ffc107;
+    color: #c63c47;
+  }
+  .floating-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #28d160;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+  }
+  .btn-cadastrar1{
+    border: 2px solid #ffc107;
+    background-color: transparent;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+  }
