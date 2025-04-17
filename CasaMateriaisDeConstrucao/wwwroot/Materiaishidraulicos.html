@@ -9,6 +9,52 @@
     <link rel="stylesheet" href="css/construcao.css">
 </head>
 <body>
+    <style>
+        .card-container {
+          display: flex;
+          gap: 32px;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin-top: 2rem;
+        }
+      
+        .card {
+          background-color: white;
+          border-radius: 10px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          padding: 16px;
+          width: 320px;
+          text-align: center;
+        }
+      
+        .card img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          border-radius: 8px;
+        }
+      
+        .btn-candidatar, .btn-detalhes {
+          border: 2px solid #ffc107;
+          background-color: transparent;
+          color: black;
+          padding: 8px 16px;
+          border-radius: 8px;
+          font-weight: bold;
+          transition: 0.3s;
+          margin-top: 12px;
+          display: inline-block;
+        }
+      
+        .btn-candidatar:hover, .btn-detalhes:hover {
+          background-color: #ffc107;
+          color: white;
+        }
+      
+        .modal-content {
+          padding: 20px;
+        }
+      </style>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
             <div class="container-fluid">
@@ -57,7 +103,108 @@
           </nav>
     </header>
     <main>
-
+        <div class="container-fluid p-0">
+            <div class="bg-danger text-white text-center py-4">
+              
+              <h1><strong>Materiais Hidráulicos</strong></h1>
+            </div>
+            <div class="container">
+                
+                <div class="card-container">
+                  <div class="card">
+                    <img src="img/te.jpg" alt="Produto 1">
+                    <h4>Tê PVC Marrom Soldável 3/4" 25mm Tigre</h4>
+                    <h5><strong>R$ 2,25</strong></h5>
+                    <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal1">Ver detalhes</button>
+                  </div>
+                  <div class="card">
+                    <img src="img/cano_marrom_pvc_25mm_ou_3_4_3m_tigre_85949885_47a1_600x600.jpg" alt="Produto 2">
+                    <h4>Cano PVC Marrom Soldável 3m 3/4" 25mm Tigre</h4>
+                    <h5><strong>R$ 17,29</strong></h5>
+                    <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal2">Ver detalhes</button>
+                  </div>
+                  <div class="card">
+                    <img src="img/te.jpg" alt="Produto 3">
+                    <h4>Caixa Sifonada Quadrada com Ralo 100x50mm PVC Equation</h4>
+                    <h5><strong>R$ 25,90</strong></h5>
+                    <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal3">Ver detalhes</button>
+                  </div>
+                  <div class="card">
+                    <img src="img/bisnaga.jpg" alt="Produto 4">
+                    <h4>Cola para PVC Incolor Frasco 850g Tigre</h4>
+                    <h5><strong>R$ 91,90</strong></h5>
+                    <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal4">Ver detalhes</button>
+                  </div>
+                  <div class="card">
+                    <img src="img/cola175.jpg" alt="Produto 5">
+                    <h4>Cola para PVC Incolor Frasco 175g Tigre</h4>
+                    <h5><strong>R$ 20,99</strong></h5>
+                    <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal5">Ver detalhes</button>
+                  </div>
+                  <div class="card">
+                    <img src="img/cola850.jpg" alt="Produto 6">
+                    <h4>Cola para PVC Incolor Bisnaga 75g Tigre</h4>
+                    <h5><strong>R$ 15,99</strong></h5>
+                    <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal6">Ver detalhes</button>
+                  </div>
+                </div>
+              </div>
+              
+             
+              <div class="modal fade" id="modal1" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <h5>Tê PVC Marrom Soldável 3/4" 25mm Tigre</h5>
+                  <P>A conexão hidráulica Tê PVC da Marca Tigre com bitola de 3/4" ou 25mm é a peça que você procura para o seu projeto hidráulico de água fria ideal. Aproveite este produto de qualidade e excelência Tigre!</P>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="modal2" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <h5>Cano PVC Marrom Soldável 3m 3/4" 25mm Tigre</h5>
+                    <P>O Cano Marrom PVC Soldável 25mm ou 3/4" 3m Tigre é um componente essencial para a rede de distribuição hidráulica da sua construção. Ele é feito com material resistente e deve ser utilizado apenas para a água fria.</P>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="modal3" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <h5>Caixa Sifonada Quadrada com Ralo 100x50mm PVC Equation</h5>
+                    <P>A Caixa Sifonada Quadrada com Ralo 100 mm x 50 mm PVC Equation é recomendada para áreas que lidam com grandes quantidades de água com frequência, como lavanderias, por exemplo, pois possui 4 entradas que podem escoar rapidamente a água.</P>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="modal4" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <h5>Cola para PVC Incolor Frasco 850g Tigre</h5>
+                    <P>Promove a união entre tubos e conexões de PVC Tigre por meio de soldagem a frio.Processo de soldagem das linhas Soldável Marrom para Água Fria, Registros e válvulas soldáveis, Esgoto Série Normal e Reforçada e linha Irriga LF (Ponta Bolsa Lisa).</P>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="modal5" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <h5>Cola para PVC Incolor Frasco 175g Tigre</h5>
+                    <P>• Uso universal, adaptável a diferentes sistemas de encanamento.
+                        • Extensível até 66 cm, facilitando ajustes precisos.
+                        • É fabricado em plástico de alta qualidade;
+                        • Tonalidade branca para uma aparência limpa.
+                        • Entrada simples do sifão, facilitando a instalação.</P>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="modal6" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <h5>Cola para PVC Incolor Bisnaga 75g Tigre</h5>
+                    <P>Promove a união entre tubos e conexões de PVC Tigre por meio de soldagem a frio.Processo de soldagem das linhas Soldável Marrom para Água Fria, Registros e válvulas soldáveis, Esgoto Série Normal e Reforçada e linha Irriga LF (Ponta Bolsa Lisa).</P>
+                  </div>
+                </div>
+              </div>
+        </div>
+   &emsp13;
     </main>
     <footer>
         <footer>

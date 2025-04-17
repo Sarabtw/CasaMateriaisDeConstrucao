@@ -9,6 +9,52 @@
     <link rel="stylesheet" href="css/construcao.css">
 </head>
 <body>
+    <style>
+        .card-container {
+          display: flex;
+          gap: 32px;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin-top: 2rem;
+        }
+      
+        .card {
+          background-color: white;
+          border-radius: 10px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          padding: 16px;
+          width: 320px;
+          text-align: center;
+        }
+      
+        .card img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          border-radius: 8px;
+        }
+      
+        .btn-candidatar, .btn-detalhes {
+          border: 2px solid #ffc107;
+          background-color: transparent;
+          color: black;
+          padding: 8px 16px;
+          border-radius: 8px;
+          font-weight: bold;
+          transition: 0.3s;
+          margin-top: 12px;
+          display: inline-block;
+        }
+      
+        .btn-candidatar:hover, .btn-detalhes:hover {
+          background-color: #ffc107;
+          color: white;
+        }
+      
+        .modal-content {
+          padding: 20px;
+        }
+      </style>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
             <div class="container-fluid">
@@ -57,7 +103,104 @@
           </nav>
     </header>
     <main>
-
+        <div class="container-fluid p-0">
+            <div class="bg-danger text-white text-center py-4">
+              
+              <h1><strong>PORTAS</strong></h1>
+            </div>
+            <div class="container">
+                
+                <div class="card-container">
+                  <div class="card">
+                    <img src="img/produto1.jpg" alt="Produto 1">
+                    <h4>Produto 1</h4>
+                    <h5><strong>R$ 29,90</strong></h5>
+                    <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal1">Ver detalhes</button>
+                  </div>
+                  <div class="card">
+                    <img src="img/produto2.jpg" alt="Produto 2">
+                    <h4>Produto 2</h4>
+                    <h5><strong>R$ 29,90</strong></h5>
+                    <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal2">Ver detalhes</button>
+                  </div>
+                  <div class="card">
+                    <img src="img/produto3.jpg" alt="Produto 3">
+                    <h4>Produto 3</h4>
+                    <h5><strong>R$ 29,90</strong></h5>
+                    <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal3">Ver detalhes</button>
+                  </div>
+                  <div class="card">
+                    <img src="img/produto4.jpg" alt="Produto 4">
+                    <h4>Produto 4</h4>
+                    <h5><strong>R$ 29,90</strong></h5>
+                    <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal4">Ver detalhes</button>
+                  </div>
+                  <div class="card">
+                    <img src="img/produto5.jpg" alt="Produto 5">
+                    <h4>Produto 5</h4>
+                    <h5><strong>R$ 29,90</strong></h5>
+                    <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal5">Ver detalhes</button>
+                  </div>
+                  <div class="card">
+                    <img src="img/produto6.jpg" alt="Produto 6">
+                    <h4>Produto 6</h4>
+                    <h5><strong>R$ 29,90</strong></h5>
+                    <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal6">Ver detalhes</button>
+                  </div>
+                </div>
+              </div>
+              
+             
+              <div class="modal fade" id="modal1" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <h5>Produto 1</h5>
+                    <p>Informações detalhadas sobre o produto 1.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="modal2" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <h5>Produto 2</h5>
+                    <p>Informações detalhadas sobre o produto 2.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="modal3" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <h5>Produto 3</h5>
+                    <p>Informações detalhadas sobre o produto 3.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="modal4" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <h5>Produto 4</h5>
+                    <p>Informações detalhadas sobre o produto 4.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="modal5" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <h5>Produto 5</h5>
+                    <p>Informações detalhadas sobre o produto 5.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="modal6" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <h5>Produto 6</h5>
+                    <p>Informações detalhadas sobre o produto 6.</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+   &emsp13;
     </main>
     <footer>
         <footer>

@@ -9,6 +9,52 @@
     <link rel="stylesheet" href="css/construcao.css">
 </head>
 <body>
+    <style>
+        .card-container {
+          display: flex;
+          gap: 32px;
+          justify-content: center;
+          flex-wrap: wrap;
+          margin-top: 2rem;
+        }
+      
+        .card {
+          background-color: white;
+          border-radius: 10px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          padding: 16px;
+          width: 320px;
+          text-align: center;
+        }
+      
+        .card img {
+          width: 100%;
+          height: 200px;
+          object-fit: cover;
+          border-radius: 8px;
+        }
+      
+        .btn-candidatar, .btn-detalhes {
+          border: 2px solid #ffc107;
+          background-color: transparent;
+          color: black;
+          padding: 8px 16px;
+          border-radius: 8px;
+          font-weight: bold;
+          transition: 0.3s;
+          margin-top: 12px;
+          display: inline-block;
+        }
+      
+        .btn-candidatar:hover, .btn-detalhes:hover {
+          background-color: #ffc107;
+          color: white;
+        }
+      
+        .modal-content {
+          padding: 20px;
+        }
+      </style>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
             <div class="container-fluid">
@@ -57,7 +103,109 @@
           </nav>
     </header>
     <main>
-
+        <div class="container-fluid p-0">
+            <div class="bg-danger text-white text-center py-4">
+                <h2>PARA A SUA CONSTRUÇÃO</h2>
+              <h1><strong>CIMENTO, AREIA, TIJOLO, TELHAS, ARGAMASSAS</strong></h1>
+            </div>
+            <div class="container">
+                
+                <div class="card-container">
+                  <div class="card">
+                    <img src="img/cimento.jpg" alt="Produto 1">
+                    <h4>Cimento Cinza CPII-E 50KG Campeão Nacional</h4>
+                    <h5><strong>R$ 29,90</strong></h5>
+                    <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal1">Ver detalhes</button>
+                  </div>
+                  <div class="card">
+                    <img src="img/areia.jpg" alt="Produto 2">
+                    <h4>Areia Média Lavada 20Kg AB Areias</h4>
+                    <h5><strong>R$ 6,11</strong></h5>
+                    <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal2">Ver detalhes</button>
+                  </div>
+                  <div class="card">
+                    <img src="img/tijolo1.jpg" alt="Produto 3">
+                    <h4>Bloco Cerâmico Nova Conquista 09x19x19cm Vermelho</h4>
+                    <h5><strong>R$ 0,99</strong></h5>
+                    <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal3">Ver detalhes</button>
+                  </div>
+                  <div class="card">
+                    <img src="img/tijolo2.jpg" alt="Produto 4">
+                    <h4>Tijolinho Ensacado com 10 Unidades AB Areias</h4>
+                    <h5><strong>R$ 8,90</strong></h5>
+                    <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal4">Ver detalhes</button>
+                  </div>
+                  <div class="card">
+                    <img src="img/telha.jpg" alt="Produto 5">
+                    <h4>Telha Brasilit Ondulada de Fibrocimento 244x110cm 6mm Cinza</h4>
+                    <h5><strong>R$ 59,90</strong></h5>
+                    <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal5">Ver detalhes</button>
+                  </div>
+                  <div class="card">
+                    <img src="img/argamassa.jpg" alt="Produto 6">
+                    <h4>Argamassa Quartzolit de uso Interno para Porcelanato 20kg Cinza</h4>
+                    <h5><strong>R$ 23,41</strong></h5>
+                    <button class="btn-detalhes" data-bs-toggle="modal" data-bs-target="#modal6">Ver detalhes</button>
+                  </div>
+                </div>
+              </div>
+              
+             
+              <div class="modal fade" id="modal1" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <h5>Cimento Cinza CPII-E 50KG Campeão Nacional</h5>
+                    <p>Cimento Cinza CPII-E 50KG Campeão Nacional Resistência inicial superior, Coloração escura, Secagem e pega rápida.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="modal2" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <h5>Areia Média Lavada 20Kg AB Areias</h5>
+                    <p>Areia Média Lavada 20Kg AB Areias Areia de Fácil acabamento e ótimo rendimento. A Areia Média Lavada 20kg da AB Areias é a areia mais utilizada, pois sua estrutura permite que seja aplicada em praticamente todas as fases da obra: na preparação da massa e assentamento de tijolos, chapisco, fabricação de artefatos de concreto aparente. Detalhes técnicos: Areia lavada; Dimensões da embalagem 45 x 35 x 8 cm; 20 Quilogramas, seu peso 20Kg.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="modal3" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <h5>Bloco Cerâmico Nova Conquista 09x19x19cm Vermelho</h5>
+                    <p>Bloco cerâmico 09x19x19cm Nova Conquista
+                        1,5 MPA</p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="modal4" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <h5>Tijolinho Ensacado com 10 Unidades AB Areias</h5>
+                    <p>Tijolinho Ensacado com 10 Unidades AB Areias Tijolo Comum Ensacado Com 10 unidades AB Areias é muito utilizado e indicado para fazer paredes decoradas com estilo rústico onde o tijolo fica visível, agregando assim um charme a mais em seu ambiente. Tijolo Comum Ensacado na medida certa para pequenos serviços como parede decoradas. Dimensões da embalagem com 10 unidades A38xL23xC35 pesando 10Kg. Mais limpeza e praticidade.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="modal5" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <h5>Telha Brasilit Ondulada de Fibrocimento 244x110cm 6mm Cinza</h5>
+                    <p>Telha ondulada de fibrocimento 244x110cm 6mm cinza Brasilit As telhas de fibrocimento Brasilit são a solução ideal para seu projeto, seja ele residencial, industrial ou comercial. Além disso, oferecerem um acabamento perfeito para sua obra! Desenvolvidas com a tecnologia CRFS (Cimento Reforçado com Fios Sintéticos).
+                        São utilizadas em obras residenciais, comerciais, etc.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="modal6" tabindex="-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <h5>Argamassa Quartzolit de uso Interno para Porcelanato 20kg Cinza</h5>
+                    <p>Argamassa de uso interno para Porcelanato 20kg cinza Quartzolit Alta aderência
+                        Áreas internas de alto tráfego
+                        Pisos e paredes de áreas internas Cerâmicas do tipo porcelanato de até 80x80cm em pisos e paredes de áreas internas.
+                        Áreas de grande movimentação de pedestres, como edifícios comerciais, estações, etc.</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+   &emsp13;
     </main>
     <footer>
         <footer>
